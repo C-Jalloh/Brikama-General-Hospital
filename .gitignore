@@ -1,9 +1,59 @@
-# Environment files
+# Secrets and sensitive files
+secrets/
+*.secret
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+
+# OAuth and API credentials
+client_secret*.json
+service_account*.json
+credentials*.json
+oauth*.json
+google*.json
+aws-credentials*
+azure-credentials*
+
+# API Keys and Tokens
+api_keys/
+*.api_key
+*_key.txt
+*_token.txt
+*_secret.txt
+
+# Database credentials
+db_credentials*
+database_credentials*
+
+# SSL/TLS certificates
+ssl/
+certs/
+certificates/
+*.cer
+*.der
+
+# Private keys
+private/
+keys/
+*.private
+*_private*
+
+# Configuration files with secrets
+config/secrets*
+config/credentials*
+settings/secrets*
+settings/credentials*
+
+# Environment files (expanded)
 .env
 .env.local
 .env.development
 .env.production
 .env.test
+.env.staging
+.env.ci
 .env*
 
 # Python
